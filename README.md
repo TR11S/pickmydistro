@@ -10,7 +10,7 @@
 ## For Developers
 
 Built using Jekyll and Tailwind.
-Hosted by GitHuub Pages.
+Hosted by GitHub Pages.
 
 ## 📜 License
 Licensed under the [GPL-3.0 License](LICENSE) <br>
