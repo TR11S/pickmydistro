@@ -18,31 +18,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 
 
-      - run: npm ci
+      - name: Install Dependencies
+        run: npm install 
 
       - name: Build Tailwind
-        run: npx tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify
+        # Logic: Read from main.css, output to a distribution file Jekyll will pick up
+        run: npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/dist.css
 
-      - uses: ruby/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.4' 
           bundler-cache: true
 
-      - uses: actions/configure-pages@v5
+      - name: Setup Pages
         id: pages
+        uses: actions/configure-pages@v5
 
       - name: Build Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     needs: build
