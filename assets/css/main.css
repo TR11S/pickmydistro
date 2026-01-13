@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-ubuntu: #E95420;
+  --color-fedora: #3c0381;
+  --font-display: "Inter", "system-ui", sans-serif;
+}
