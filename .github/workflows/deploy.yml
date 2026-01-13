@@ -1,33 +1,56 @@
-name: Deploy to GitHub Pages
+name: Deploy Jekyll site with Tailwind to Pages
+
 on:
   push:
-    branches: ["main"] # Ensure your primary branch is named main
+    branches: ["main"]
+  workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true # Changed to true to clear stuck builds faster
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 24
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.4'
-          bundler-cache: true
-      - name: Install NPM dependencies
-        run: npm install
+          node-version: 24 # Matches your local v24.11.0
+
+      - name: Install Tailwind
+        run: npm install # Ensures @tailwindcss/cli is available
+
       - name: Build Tailwind CSS
-        run: npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/dist.css
+        # This matches the input/output structure we discussed
+        run: npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/style.css
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4' # Matches your local v3.4.8
+          bundler-cache: true
+
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3 # Points to ./_site by default
+
   deploy:
     environment:
       name: github-pages
