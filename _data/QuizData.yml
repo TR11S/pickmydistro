@@ -1,0 +1,26 @@
+# _data/QuizData.yml
+
+
+# Gaming & Multimedia 
+- id: 1
+  variable: gaming_multimedia_support
+  text: "How important is gaming and multimedia support to you?"
+  description: "Pre-installed codecs, NVIDIA/AMD drivers, and gaming platforms like Steam can enhance your experience."
+  labelLeft: "Not Important"
+  labelRight: "Critical requirement"
+
+# Default Software Selection
+- id: 2
+  variable: default_software_selection
+  text: "How much software should come pre-installed?"
+  description: "pre-installed applications and tools out of the box"
+  labelLeft: "Bare minimum"
+  labelRight: "Everything included"
+
+- id: 3
+  variable: stability
+  text: "How important is system stability to you?"
+  description: "Trade-off between having the latest features and a rock-solid system."
+  labelLeft: "Bleeding edge"
+  labelRight: "Rock solid"
+  

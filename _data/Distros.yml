@@ -1,0 +1,33 @@
+# _data/Distros.yml
+
+distros:
+
+  ubuntu:
+    name: "Ubuntu"
+    description: "A user-friendly Linux distribution based on Debian, known for its ease of use and strong community support."
+    website: "https://ubuntu.com/"
+    logo: "ubuntu-logo.png"
+    values:
+      gaming_multimedia_support: 8
+      default_software_selection: 7
+      stability: 6
+
+  arch:
+    name: "Arch Linux"
+    description: "A lightweight and flexible Linux distribution that follows a rolling release model, ideal for advanced users who want to customize their system."
+    website: "https://archlinux.org/"
+    logo: "arch-logo.png"
+    values:
+      gaming_multimedia_support: 5
+      default_software_selection: 3
+      stability: 4
+  
+  fedora:
+    name: "Fedora"
+    description: "A cutting-edge Linux distribution sponsored by Red Hat, known for its focus on innovation and inclusion of the latest software."
+    website: "https://getfedora.org/"
+    logo: "fedora-logo.png"
+    values:
+      gaming_multimedia_support: 6
+      default_software_selection: 5
+      stability: 7
