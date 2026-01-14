@@ -5,3 +5,18 @@
   --color-fedora: #3c0381;
   --font-display: "Inter", "system-ui", sans-serif;
 }
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
+  font-family: var(--font-display);
+  min-height: 100vh;
+}
+
+.slider {
+  transition: all 0.2s ease;
+}
+
+.slider:focus {
+  outline: none;
+}

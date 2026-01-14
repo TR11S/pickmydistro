@@ -18,3 +18,37 @@ title: Home
             </div>
     </div>
 </div>
+
+
+<style>
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #1e293b;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #1e293b;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #60a5fa;
+    transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb:hover {
+    background: #60a5fa;
+    transform: scale(1.1);
+}
+</style>
