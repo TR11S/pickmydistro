@@ -5,8 +5,9 @@ module.exports = {
     './_includes/**/*.html',
     './*.md',
     './*.html',
-    './js/**/*.js', // Ensure this points to your quiz.js location
+    './assets/js/**/*.js',
   ],
+
   theme: {
     extend: {
       fontFamily: {
