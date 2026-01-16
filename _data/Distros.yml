@@ -9,8 +9,24 @@ distros:
     logo: "ubuntu-logo.png"
     values:
       gaming_multimedia_support: 8
+      dev_tooling: 8
+      hacking_opsec_support: 5
+      server_suitability: 9
+      repo_size: 9
+      sandboxed_vs_native_apps: 6
       default_software_selection: 7
       stability: 6
+      update_frequency: 7
+      beginner_friendliness: 10
+      hardware_support: 9
+      security_strength: 7
+      popularity: 10
+      installation_ease: 10
+      recovery_ease: 8
+      foss_commitment: 7
+      corporate_backing: 9
+    DE: ["GNOME", "KDE", "XFCE", "LXQt", "MATE"]
+    
 
   arch:
     name: "Arch Linux"
@@ -19,8 +35,23 @@ distros:
     logo: "arch-logo.png"
     values:
       gaming_multimedia_support: 5
+      dev_tooling: 10
+      hacking_opsec_support: 7
+      server_suitability: 6
+      repo_size: 10
+      sandboxed_vs_native_apps: 3
       default_software_selection: 3
       stability: 4
+      update_frequency: 10
+      beginner_friendliness: 2
+      hardware_support: 7
+      security_strength: 6
+      popularity: 8
+      installation_ease: 3
+      recovery_ease: 4
+      foss_commitment: 10
+      corporate_backing: 1
+    DE: ["GNOME", "KDE", "XFCE", "i3", "Sway", "Hyprland"]
   
   fedora:
     name: "Fedora"
@@ -29,5 +60,270 @@ distros:
     logo: "fedora-logo.png"
     values:
       gaming_multimedia_support: 6
+      dev_tooling: 9
+      hacking_opsec_support: 6
+      server_suitability: 8
+      repo_size: 8
+      sandboxed_vs_native_apps: 7
       default_software_selection: 5
       stability: 7
+      update_frequency: 9
+      beginner_friendliness: 7
+      hardware_support: 8
+      security_strength: 8
+      popularity: 7
+      installation_ease: 8
+      recovery_ease: 7
+      foss_commitment: 9
+      corporate_backing: 9
+    DE: ["GNOME", "KDE", "XFCE", "LXQt", "Cinnamon", "MATE", "i3", "Sway"]
+
+  debian:
+    name: "Debian"
+    description: "One of the oldest and most stable Linux distributions, known for its commitment to free software and rock-solid reliability."
+    website: "https://www.debian.org/"
+    logo: "debian-logo.png"
+    values:
+      gaming_multimedia_support: 4
+      dev_tooling: 7
+      hacking_opsec_support: 6
+      server_suitability: 10
+      repo_size: 10
+      sandboxed_vs_native_apps: 3
+      default_software_selection: 6
+      stability: 10
+      update_frequency: 3
+      beginner_friendliness: 6
+      hardware_support: 8
+      security_strength: 8
+      popularity: 9
+      installation_ease: 7
+      recovery_ease: 7
+      foss_commitment: 10
+      corporate_backing: 3
+    DE: ["GNOME", "KDE", "XFCE", "LXQt", "MATE", "Cinnamon"]
+
+  linuxmint:
+    name: "Linux Mint"
+    description: "A user-friendly distribution based on Ubuntu, offering a traditional desktop experience with excellent multimedia support out of the box."
+    website: "https://linuxmint.com/"
+    logo: "mint-logo.png"
+    values:
+      gaming_multimedia_support: 8
+      dev_tooling: 7
+      hacking_opsec_support: 5
+      server_suitability: 6
+      repo_size: 9
+      sandboxed_vs_native_apps: 4
+      default_software_selection: 8
+      stability: 8
+      update_frequency: 6
+      beginner_friendliness: 10
+      hardware_support: 9
+      security_strength: 7
+      popularity: 9
+      installation_ease: 10
+      recovery_ease: 8
+      foss_commitment: 8
+      corporate_backing: 2
+    DE: ["Cinnamon", "MATE", "XFCE"]
+
+  popos:
+    name: "Pop!_OS"
+    description: "A Ubuntu-based distribution by System76, optimized for developers and creators with excellent NVIDIA support and productivity features."
+    website: "https://pop.system76.com/"
+    logo: "popos-logo.png"
+    values:
+      gaming_multimedia_support: 9
+      dev_tooling: 9
+      hacking_opsec_support: 5
+      server_suitability: 7
+      repo_size: 9
+      sandboxed_vs_native_apps: 5
+      default_software_selection: 7
+      stability: 7
+      update_frequency: 7
+      beginner_friendliness: 8
+      hardware_support: 10
+      security_strength: 7
+      popularity: 7
+      installation_ease: 9
+      recovery_ease: 8
+      foss_commitment: 7
+      corporate_backing: 7
+    DE: ["COSMIC", "GNOME"]
+
+  bazzite:
+    name: "Bazzite"
+    description: "A Fedora-based gaming distribution with built-in Steam, Lutris, and gaming optimizations, designed for a console-like experience."
+    website: "https://bazzite.gg/"
+    logo: "bazzite-logo.png"
+    values:
+      gaming_multimedia_support: 10
+      dev_tooling: 7
+      hacking_opsec_support: 5
+      server_suitability: 4
+      repo_size: 8
+      sandboxed_vs_native_apps: 8
+      default_software_selection: 9
+      stability: 7
+      update_frequency: 8
+      beginner_friendliness: 8
+      hardware_support: 9
+      security_strength: 7
+      popularity: 5
+      installation_ease: 9
+      recovery_ease: 9
+      foss_commitment: 8
+      corporate_backing: 3
+    DE: ["KDE", "GNOME"]
+
+  nobara:
+    name: "Nobara"
+    description: "A Fedora-based distribution modified by GloriousEggroll, optimized for gaming and content creation with pre-configured codecs and drivers."
+    website: "https://nobaraproject.org/"
+    logo: "nobara-logo.png"
+    values:
+      gaming_multimedia_support: 10
+      dev_tooling: 8
+      hacking_opsec_support: 5
+      server_suitability: 5
+      repo_size: 8
+      sandboxed_vs_native_apps: 4
+      default_software_selection: 9
+      stability: 6
+      update_frequency: 8
+      beginner_friendliness: 7
+      hardware_support: 9
+      security_strength: 7
+      popularity: 6
+      installation_ease: 8
+      recovery_ease: 7
+      foss_commitment: 8
+      corporate_backing: 1
+    DE: ["KDE", "GNOME"]
+
+  cachyos:
+    name: "CachyOS"
+    description: "An Arch-based distribution focused on performance optimization with custom-compiled packages and advanced kernel optimizations."
+    website: "https://cachyos.org/"
+    logo: "cachyos-logo.png"
+    values:
+      gaming_multimedia_support: 9
+      dev_tooling: 9
+      hacking_opsec_support: 6
+      server_suitability: 5
+      repo_size: 10
+      sandboxed_vs_native_apps: 3
+      default_software_selection: 6
+      stability: 5
+      update_frequency: 10
+      beginner_friendliness: 5
+      hardware_support: 8
+      security_strength: 6
+      popularity: 4
+      installation_ease: 7
+      recovery_ease: 5
+      foss_commitment: 9
+      corporate_backing: 1
+    DE: ["KDE", "GNOME", "i3", "bspwm", "Openbox"]
+
+  endeavouros:
+    name: "EndeavourOS"
+    description: "A user-friendly Arch-based distribution that provides an easy entry point to Arch Linux with a helpful community and graphical installer."
+    website: "https://endeavouros.com/"
+    logo: "endeavouros-logo.png"
+    values:
+      gaming_multimedia_support: 7
+      dev_tooling: 9
+      hacking_opsec_support: 7
+      server_suitability: 6
+      repo_size: 10
+      sandboxed_vs_native_apps: 3
+      default_software_selection: 5
+      stability: 5
+      update_frequency: 10
+      beginner_friendliness: 6
+      hardware_support: 8
+      security_strength: 6
+      popularity: 6
+      installation_ease: 7
+      recovery_ease: 5
+      foss_commitment: 10
+      corporate_backing: 1
+    DE: ["KDE", "GNOME", "XFCE", "i3", "Sway", "Budgie", "Cinnamon", "MATE"]
+
+  nixos:
+    name: "NixOS"
+    description: "A unique Linux distribution built on the Nix package manager, offering declarative configuration and atomic upgrades for reproducible systems."
+    website: "https://nixos.org/"
+    logo: "nixos-logo.png"
+    values:
+      gaming_multimedia_support: 6
+      dev_tooling: 10
+      hacking_opsec_support: 8
+      server_suitability: 9
+      repo_size: 10
+      sandboxed_vs_native_apps: 7
+      default_software_selection: 4
+      stability: 8
+      update_frequency: 9
+      beginner_friendliness: 2
+      hardware_support: 7
+      security_strength: 9
+      popularity: 5
+      installation_ease: 3
+      recovery_ease: 10
+      foss_commitment: 10
+      corporate_backing: 2
+    DE: ["GNOME", "KDE", "XFCE", "i3", "Sway", "Hyprland"]
+
+  zorinos:
+    name: "Zorin OS"
+    description: "A Ubuntu-based distribution designed to be familiar for Windows and macOS users, offering a polished and elegant desktop experience."
+    website: "https://zorin.com/os/"
+    logo: "zorinos-logo.png"
+    values:
+      gaming_multimedia_support: 8
+      dev_tooling: 7
+      hacking_opsec_support: 5
+      server_suitability: 6
+      repo_size: 9
+      sandboxed_vs_native_apps: 5
+      default_software_selection: 8
+      stability: 8
+      update_frequency: 5
+      beginner_friendliness: 10
+      hardware_support: 9
+      security_strength: 7
+      popularity: 6
+      installation_ease: 10
+      recovery_ease: 8
+      foss_commitment: 6
+      corporate_backing: 5
+    DE: ["GNOME (Zorin Desktop)", "XFCE Lite"]
+
+  opensuse_tumbleweed:
+    name: "openSUSE Tumbleweed"
+    description: "A rolling release distribution known for its robustness, excellent tools like YaST, and thorough testing despite frequent updates."
+    website: "https://www.opensuse.org/"
+    logo: "opensuse-logo.png"
+    values:
+      gaming_multimedia_support: 6
+      dev_tooling: 9
+      hacking_opsec_support: 7
+      server_suitability: 8
+      repo_size: 9
+      sandboxed_vs_native_apps: 5
+      default_software_selection: 6
+      stability: 6
+      update_frequency: 10
+      beginner_friendliness: 6
+      hardware_support: 8
+      security_strength: 8
+      popularity: 6
+      installation_ease: 7
+      recovery_ease: 8
+      foss_commitment: 9
+      corporate_backing: 8
+    DE: ["KDE", "GNOME", "XFCE", "LXQt", "MATE", "Cinnamon"]

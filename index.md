@@ -16,14 +16,14 @@ title: Home
             <div class="space-y-6">
                 <!-- Badge -->
                 <div class="inline-block">
-                    <span class="px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-300 rounded-full border border-blue-500/30">
+                    <span class="px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-linear-to-r from-blue-500/20 to-purple-500/20 text-blue-300 rounded-full border border-blue-500/30">
                         System Recommendation Engine
                     </span>
                 </div>
                 
                 <!-- Title -->
                 <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight">
-                    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                         Find Your
                     </span>
                     <br>
@@ -40,24 +40,24 @@ title: Home
             
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
-                <button onclick="startQuiz('beginner')" class="btn-glow group relative w-full sm:w-auto px-8 py-5 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-xl overflow-hidden transition-all">
+                <button onclick="startQuiz('beginner')" class="btn-glow group relative w-full sm:w-auto px-8 py-5 bg-linear-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-xl overflow-hidden transition-all">
                     <span class="relative z-10 flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                         Beginner Quiz
                     </span>
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-linear-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </button>
                 
-                <button onclick="startQuiz('advanced')" class="btn-glow group relative w-full sm:w-auto px-8 py-5 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl overflow-hidden transition-all">
+                <button onclick="startQuiz('advanced')" class="btn-glow group relative w-full sm:w-auto px-8 py-5 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl overflow-hidden transition-all">
                     <span class="relative z-10 flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                         </svg>
                         Advanced Quiz
                     </span>
-                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="absolute inset-0 bg-linear-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </button>
             </div>
         </div>
@@ -88,12 +88,12 @@ title: Home
                 </span>
             </div>
             <div class="w-full bg-slate-800/50 rounded-full h-2 overflow-hidden">
-                <div id="progress-bar" class="progress-glow h-2 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-500" style="width: 0%"></div>
+                <div id="progress-bar" class="progress-glow h-2 rounded-full bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-500" style="width: 0%"></div>
             </div>
         </div>
 
         <!-- Questions Container -->
-        <div id="questions-wrapper" class="min-h-[400px]">
+        <div id="questions-wrapper" class="min-h-100">
             {% for question in site.data.QuizData %}
             <div class="question-step {% unless forloop.first %}hidden{% endunless %}" data-step="{{ forloop.index0 }}" data-variable="{{ question.variable }}">
                 
@@ -120,8 +120,8 @@ title: Home
                         <span class="text-sm sm:text-base font-medium text-slate-400 text-left flex-1">
                             {{ question.labelLeft }}
                         </span>
-                        <div class="px-6 py-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-xl">
-                            <span class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent" id="val-{{ forloop.index0 }}">
+                        <div class="px-6 py-3 bg-linear-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-xl">
+                            <span class="text-2xl font-bold bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent" id="val-{{ forloop.index0 }}">
                                 0
                             </span>
                         </div>
@@ -150,7 +150,7 @@ title: Home
                     </button>
                     {% endunless %}
                     
-                    <button onclick="{% if forloop.last %}calculateResults(){% else %}nextStep({{ forloop.index0 }}){% endif %}" class="btn-glow flex-1 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all">
+                    <button onclick="{% if forloop.last %}calculateResults(){% else %}nextStep({{ forloop.index0 }}){% endif %}" class="btn-glow flex-1 px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-semibold rounded-xl transition-all">
                         {% if forloop.last %}
                         View Results
                         {% else %}
@@ -170,11 +170,11 @@ title: Home
         
         <!-- Header -->
         <div class="text-center mb-16 fade-in">
-            <span class="inline-block px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-gradient-to-r from-green-500/20 to-blue-500/20 text-green-300 rounded-full border border-green-500/30 mb-6">
+            <span class="inline-block px-4 py-2 text-xs font-semibold tracking-wider uppercase bg-linear-to-r from-green-500/20 to-blue-500/20 text-green-300 rounded-full border border-green-500/30 mb-6">
                 Analysis Complete
             </span>
             <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-                <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                     Your Matches
                 </span>
             </h2>
@@ -195,7 +195,7 @@ title: Home
 
         <!-- Action Button -->
         <div class="text-center mt-16 fade-in">
-            <button onclick="location.reload()" class="btn-glow px-10 py-5 bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-semibold rounded-xl transition-all border border-slate-600/50">
+            <button onclick="location.reload()" class="btn-glow px-10 py-5 bg-linear-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-semibold rounded-xl transition-all border border-slate-600/50">
                 <span class="flex items-center gap-3">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>

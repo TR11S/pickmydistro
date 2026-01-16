@@ -193,14 +193,14 @@ function createFeaturedCard(match) {
         <div class="relative z-10">
             <!-- Crown Badge -->
             <div class="flex items-center justify-between mb-8">
-                <div class="inline-flex items-center gap-3 px-5 py-3 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full">
+                <div class="inline-flex items-center gap-3 px-5 py-3 bg-linear-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-full">
                     <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
                     <span class="text-sm font-bold text-yellow-300 uppercase tracking-wider">Best Match</span>
                 </div>
                 <div class="text-right">
-                    <div class="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                    <div class="text-5xl sm:text-6xl font-bold bg-linear-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                         ${match.matchPercentage}%
                     </div>
                     <div class="text-sm text-slate-400 uppercase tracking-wider mt-1">Compatibility</div>
@@ -224,13 +224,13 @@ function createFeaturedCard(match) {
                     <span>${match.matchPercentage}%</span>
                 </div>
                 <div class="w-full bg-slate-800/50 rounded-full h-3 overflow-hidden">
-                    <div class="progress-glow h-3 rounded-full bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 transition-all duration-1000" style="width: ${match.matchPercentage}%"></div>
+                    <div class="progress-glow h-3 rounded-full bg-linear-to-r from-green-500 via-blue-500 to-purple-500 transition-all duration-1000" style="width: ${match.matchPercentage}%"></div>
                 </div>
             </div>
             
             <!-- CTA Button -->
             <a href="${match.data.website}" target="_blank" 
-               class="btn-glow inline-flex items-center gap-3 px-8 py-5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl transition-all text-lg">
+               class="btn-glow inline-flex items-center gap-3 px-8 py-5 bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl transition-all text-lg">
                 <span>Visit Official Site</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -265,10 +265,10 @@ function createSecondaryCard(match, index) {
         <div class="relative z-10">
             <!-- Match Badge -->
             <div class="flex items-center justify-between mb-6">
-                <span class="inline-flex items-center px-3 py-1.5 bg-gradient-to-r ${matchBg} border border-white/10 rounded-full text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                <span class="inline-flex items-center px-3 py-1.5 bg-linear-to-r ${matchBg} border border-white/10 rounded-full text-xs font-semibold text-slate-300 uppercase tracking-wider">
                     Match
                 </span>
-                <span class="text-3xl font-bold bg-gradient-to-r ${matchColor} bg-clip-text text-transparent">
+                <span class="text-3xl font-bold bg-linear-to-r ${matchColor} bg-clip-text text-transparent">
                     ${match.matchPercentage}%
                 </span>
             </div>
@@ -286,7 +286,7 @@ function createSecondaryCard(match, index) {
             <!-- Match Bar -->
             <div class="mb-6">
                 <div class="w-full bg-slate-800/50 rounded-full h-2 overflow-hidden">
-                    <div class="h-2 rounded-full bg-gradient-to-r ${matchColor} transition-all duration-1000" style="width: ${match.matchPercentage}%"></div>
+                    <div class="h-2 rounded-full bg-linear-to-r ${matchColor} transition-all duration-1000" style="width: ${match.matchPercentage}%"></div>
                 </div>
             </div>
             

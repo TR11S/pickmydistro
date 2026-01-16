@@ -17,10 +17,122 @@
   labelLeft: "Bare minimum"
   labelRight: "Everything included"
 
+# Stability
 - id: 3
   variable: stability
   text: "How important is system stability to you?"
   description: "Trade-off between having the latest features and a rock-solid system."
   labelLeft: "Bleeding edge"
   labelRight: "Rock solid"
-  
+
+# Development Tooling
+- id: 4
+  variable: dev_tooling
+  text: "How important are development tools and programming support?"
+  description: "Access to compilers, IDEs, libraries, and development packages."
+  labelLeft: "Not a developer"
+  labelRight: "Essential for work"
+
+# Hacking & OpSec Support
+- id: 5
+  variable: hacking_opsec_support
+  text: "How important are security and privacy tools?"
+  description: "Penetration testing tools, privacy features, and operational security capabilities."
+  labelLeft: "Don't need them"
+  labelRight: "Must have"
+
+# Server Suitability
+- id: 6
+  variable: server_suitability
+  text: "Will you use this system as a server?"
+  description: "Stability, long-term support, and server-specific packages."
+  labelLeft: "Desktop only"
+  labelRight: "Server use"
+
+# Repository Size
+- id: 7
+  variable: repo_size
+  text: "How important is having a large software repository?"
+  description: "More packages means easier installation of diverse software."
+  labelLeft: "Basic needs only"
+  labelRight: "Want everything available"
+
+# Sandboxed vs Native Apps
+- id: 8
+  variable: sandboxed_vs_native_apps
+  text: "Do you prefer sandboxed apps (Flatpak/Snap) or native packages?"
+  description: "Sandboxed apps offer better security and isolation, native packages offer better integration."
+  labelLeft: "Native packages"
+  labelRight: "Sandboxed apps"
+
+# Update Frequency
+- id: 9
+  variable: update_frequency
+  text: "How frequently do you want system updates?"
+  description: "Rolling release vs stable release model."
+  labelLeft: "Infrequent, stable"
+  labelRight: "Constant, cutting-edge"
+
+# Beginner Friendliness
+- id: 10
+  variable: beginner_friendliness
+  text: "What is your Linux experience level?"
+  description: "Some distros are easier to use than others."
+  labelLeft: "Expert user"
+  labelRight: "Complete beginner"
+
+# Hardware Support
+- id: 11
+  variable: hardware_support
+  text: "How important is broad hardware compatibility?"
+  description: "Support for various devices, including newer and exotic hardware."
+  labelLeft: "Standard hardware only"
+  labelRight: "Need wide compatibility"
+
+# Security Strength
+- id: 12
+  variable: security_strength
+  text: "How important are advanced security features?"
+  description: "SELinux, AppArmor, hardened kernels, and security-focused defaults."
+  labelLeft: "Basic security is fine"
+  labelRight: "Maximum security"
+
+# Popularity
+- id: 13
+  variable: popularity
+  text: "How important is community size and popularity?"
+  description: "Popular distros have more tutorials, forums, and community support."
+  labelLeft: "Don't care"
+  labelRight: "Want large community"
+
+# Installation Ease
+- id: 14
+  variable: installation_ease
+  text: "How simple should the installation process be?"
+  description: "Graphical installers vs command-line configuration."
+  labelLeft: "Manual setup okay"
+  labelRight: "Must be effortless"
+
+# Recovery Ease
+- id: 15
+  variable: recovery_ease
+  text: "How important is easy system recovery and rollback?"
+  description: "Ability to easily fix or revert problematic changes."
+  labelLeft: "Can troubleshoot manually"
+  labelRight: "Need easy recovery"
+
+# FOSS Commitment
+- id: 16
+  variable: foss_commitment
+  text: "How important is Free and Open Source Software philosophy?"
+  description: "Some distros strictly use FOSS, others include proprietary software."
+  labelLeft: "Pragmatic approach"
+  labelRight: "Strictly FOSS"
+
+# Corporate Backing
+- id: 17
+  variable: corporate_backing
+  text: "Do you prefer corporate-backed or community-driven distributions?"
+  description: "Corporate backing can mean more resources but less community control."
+  labelLeft: "Community-driven"
+  labelRight: "Corporate-backed"
